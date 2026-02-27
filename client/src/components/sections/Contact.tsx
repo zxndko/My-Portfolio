@@ -3,7 +3,6 @@ import { Mail, Github, Send } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { insertContactMessageSchema, type InsertContactMessage } from "@shared/schema";
-import { useSubmitContact } from "@/hooks/use-contact";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -28,14 +27,11 @@ export function Contact() {
     },
   });
 
-  const { mutate: submitMessage, isPending } = useSubmitContact();
-
   const onSubmit = (data: InsertContactMessage) => {
-    submitMessage(data, {
-      onSuccess: () => {
-        form.reset();
-      }
-    });
+    console.log("Form submitted locally:", data);
+    form.reset();
+    // In a static site, we just show a success message locally
+    alert("Thank you for your message! (Static site mode: No backend submission)");
   };
 
   return (
@@ -178,10 +174,9 @@ export function Contact() {
                     <Button 
                       type="submit" 
                       size="lg" 
-                      className="w-full sm:w-auto px-8 gap-2 font-semibold shadow-md shadow-primary/20" 
-                      disabled={isPending}
+                      className="w-full sm:w-auto px-8 gap-2 font-semibold shadow-md shadow-primary/20 bg-[#397D54] hover:bg-[#2d6342]" 
                     >
-                      {isPending ? "Sending..." : "Send Message"}
+                      Send Message
                       <Send className="w-4 h-4" />
                     </Button>
                   </form>
