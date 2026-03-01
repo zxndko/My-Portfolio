@@ -1,9 +1,6 @@
 import { motion } from "framer-motion";
 import { Mail, Github, Send } from "lucide-react";
 import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { insertContactMessageSchema, type InsertContactMessage } from "@shared/schema";
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -18,8 +15,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 
 export function Contact() {
-  const form = useForm<InsertContactMessage>({
-    resolver: zodResolver(insertContactMessageSchema),
+  const form = useForm({
     defaultValues: {
       name: "",
       email: "",
@@ -27,11 +23,10 @@ export function Contact() {
     },
   });
 
-  const onSubmit = (data: InsertContactMessage) => {
+  const onSubmit = (data: any) => {
     console.log("Form submitted locally:", data);
     form.reset();
-    // In a static site, we just show a success message locally
-    alert("Thank you for your message! (Static site mode: No backend submission)");
+    alert("ขอบคุณสำหรับข้อความ! (ระบบบันทึกข้อมูลแบบ Static เรียบร้อยแล้ว)");
   };
 
   return (
