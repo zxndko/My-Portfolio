@@ -9,7 +9,7 @@ const projects = [
     title: "Subscription Manager",
     description: "A scalable subscription tracking dashboard that empowers users to visualize their financial habits and optimize recurring expenses through intuitive, data-driven interfaces.",
     tech: ["React (Vite)", "TypeScript", "Tailwind CSS", "Context API", "Recharts"],
-    github: "https://github.com/ZXNDKO",
+    github: "https://github.com/zxndko/Subscription-Manager",
     preview: "#",
   },
   {
@@ -26,7 +26,7 @@ const projects = [
     github: "https://github.com/zxndko/Project-Mobile-App",
     preview: "#",
   },
-  
+
   {
     title: "Retro Cassette Music Player",
     description: "Reimagined the digital music listening experience by applying tactile, skeuomorphic design principles inspired by 90s cassette tapes. This project creates a unique bridge between digital software and physical reality, driving higher user engagement through nostalgia.",
@@ -87,12 +87,12 @@ export function Projects() {
                       View Code
                     </a>
                   </Button>
-                  <Button asChild size="sm" className="gap-2 bg-[#397D54] hover:bg-[#2d6342]">
+                  {/* <Button asChild size="sm" className="gap-2 bg-[#397D54] hover:bg-[#2d6342]">
                     <a href={project.preview}>
                       <ExternalLink size={16} />
                       Preview
                     </a>
-                  </Button>
+                  </Button> */}
                 </CardFooter>
               </Card>
             </motion.div>
