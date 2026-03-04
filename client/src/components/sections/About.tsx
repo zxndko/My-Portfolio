@@ -6,7 +6,7 @@ export function About() {
   return (
     <section id="about" className="py-24 bg-muted/50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -29,10 +29,10 @@ export function About() {
               A passionate student dedicated to digital innovation.
             </h3>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              Hello! I go by Sand. I am deeply interested in software engineering and frontend development. I thrive on creating intuitive, responsive, and visually appealing applications that solve real-world problems.
+              Hi, I’m Sand, a 4th-year student driven by the goal of transforming innovative ideas into tangible, impactful applications. I have a strong passion for Software Engineering and Frontend Development, with a focus on crafting intuitive UI/UX and seamless digital experiences.
             </p>
             <p className="text-muted-foreground leading-relaxed text-lg">
-              My academic journey has equipped me with a strong foundation in computer science principles, while my personal projects have honed my practical skills in modern web and mobile frameworks.
+              Equipped with a solid foundation in Computer Science and a diverse portfolio of hands-on projects, I am eager to apply my technical skills to solve real-world problems and drive innovation within a team. If you’re seeking a fast-learning, detail-oriented developer, I’d love to connect and see how I can contribute to your team!
             </p>
           </motion.div>
 
@@ -61,6 +61,7 @@ export function About() {
                     <div>
                       <p className="font-semibold text-foreground text-lg">Rangsit University</p>
                       <p className="text-muted-foreground">College of Digital Innovation Technology</p>
+                      <p className="text-muted-foreground">Bachelor of Science in Computer Science</p>
                     </div>
                   </div>
 

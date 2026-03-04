@@ -6,40 +6,42 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "EcoTracker Mobile",
-    description: "A sustainability tracking app that helps users monitor their carbon footprint and discover eco-friendly alternatives for daily habits.",
-    tech: ["Flutter", "Firebase", "Node.js"],
+    title: "Subscription Manager",
+    description: "A scalable subscription tracking dashboard that empowers users to visualize their financial habits and optimize recurring expenses through intuitive, data-driven interfaces.",
+    tech: ["React (Vite)", "TypeScript", "Tailwind CSS", "Context API", "Recharts"],
     github: "https://github.com/ZXNDKO",
-    demo: "#",
+    preview: "#",
   },
   {
-    title: "Smart Inventory System",
-    description: "An enterprise-grade inventory management solution with real-time tracking, automated alerts, and detailed analytics dashboards.",
-    tech: ["React", "TypeScript", "Node.js", "PostgreSQL"],
-    github: "https://github.com/ZXNDKO",
-    demo: "#",
+    title: "Pet Care Portal (Veterinary Services)",
+    description: "Built a veterinary clinic management system with automated booking, pet health record management, and vet profile pages. This automated the patient intake process, significantly decreasing administrative tasks and manual phone scheduling.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "AzureSQL"],
+    github: "https://github.com/zxndko/Final-Project",
+    preview: "#",
   },
   {
-    title: "HealthConnect Portal",
-    description: "A secure patient-doctor communication platform featuring appointment scheduling, medical record access, and instant messaging.",
-    tech: ["Next.js", "Tailwind CSS", "Prisma"],
-    github: "https://github.com/ZXNDKO",
-    demo: "#",
+    title: "Shabu Restaurant Ordering System ",
+    description: "Engineered a real-time ordering and automated billing system using Flutter and Firebase to streamline restaurant operations.\nSuccessfully reduced service errors and enhanced dining efficiency by providing seamless, instant order tracking.",
+    tech: ["Flutter", "Firebase", "Dart"],
+    github: "https://github.com/zxndko/Project-Mobile-App",
+    preview: "#",
   },
+  
   {
-    title: "DataViz Analytics",
-    description: "A powerful data visualization tool that transforms complex datasets into interactive, easy-to-understand charts and reports.",
-    tech: ["React", "D3.js", "Pandas", "Python"],
+    title: "Retro Cassette Music Player",
+    description: "Reimagined the digital music listening experience by applying tactile, skeuomorphic design principles inspired by 90s cassette tapes. This project creates a unique bridge between digital software and physical reality, driving higher user engagement through nostalgia.",
+    tech: ["UX Design", "Interaction Design", "Figma"],
     github: "https://github.com/ZXNDKO",
-    demo: "#",
+    preview: "#",
   },
+
 ];
 
 export function Projects() {
   return (
     <section id="projects" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -86,9 +88,9 @@ export function Projects() {
                     </a>
                   </Button>
                   <Button asChild size="sm" className="gap-2 bg-[#397D54] hover:bg-[#2d6342]">
-                    <a href={project.demo}>
+                    <a href={project.preview}>
                       <ExternalLink size={16} />
-                      Live Demo
+                      Preview
                     </a>
                   </Button>
                 </CardFooter>

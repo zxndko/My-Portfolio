@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import { 
-  SiHtml5, SiCss3, SiJavascript, SiTypescript, 
-  SiReact, SiNextdotjs, SiFlutter, SiPandas, 
-  SiFigma, SiNodedotjs 
+import {
+  SiHtml5, SiCss3, SiJavascript, SiTypescript,
+  SiReact, SiNextdotjs, SiFlutter, SiPandas,
+  SiFigma, SiNodedotjs, SiTailwindcss, SiDart, SiGithub
 } from "react-icons/si";
 
 const skills = [
@@ -15,7 +15,10 @@ const skills = [
   { name: "Node.js", icon: SiNodedotjs, color: "group-hover:text-[#339933]" },
   { name: "Flutter", icon: SiFlutter, color: "group-hover:text-[#02569B]" },
   { name: "Pandas", icon: SiPandas, color: "group-hover:text-[#150458]" },
+  { name: "Tailwind CSS", icon: SiTailwindcss, color: "group-hover:text-[#F24E1E]" },
   { name: "Figma", icon: SiFigma, color: "group-hover:text-[#F24E1E]" },
+  { name: "Dart", icon: SiDart, color: "group-hover:text-[#02569B]" },
+  { name: "Github", icon: SiGithub, color: "group-hover:text-[#24292E]" },
 ];
 
 const containerVariants = {
@@ -41,7 +44,7 @@ export function Skills() {
   return (
     <section id="skills" className="py-24">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -55,7 +58,7 @@ export function Skills() {
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"

@@ -11,10 +11,10 @@ export function Footer() {
             Chompoonuch Tubtimsri
           </p>
           <p className="text-sm text-muted-foreground mt-1">
-            Aspiring Software Developer
+            Frontend Developer & Software Engineer
           </p>
         </div>
-        
+
         <div className="flex items-center gap-4">
           <a
             href="https://github.com/ZXNDKO"

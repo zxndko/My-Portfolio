@@ -4,17 +4,17 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section 
-      id="home" 
+    <section
+      id="home"
       className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl -z-10" />
-      
+
       <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -28,7 +28,7 @@ export function Hero() {
                 Hi, I'm <span className="text-primary block mt-2">Chompoonuch</span>
               </h1>
               <h2 className="text-2xl sm:text-3xl font-medium text-muted-foreground mt-4">
-                Aspiring Software Developer
+                Frontend Developer & Software Engineer
               </h2>
               <p className="text-lg text-muted-foreground max-w-xl mx-auto lg:mx-0 pt-4 leading-relaxed">
                 Passionate about crafting clean, efficient code and building digital experiences that matter. Always learning, always building.
@@ -61,12 +61,14 @@ export function Hero() {
               {/* Abstract shape representing the developer */}
               <div className="absolute inset-0 bg-gradient-to-tr from-primary to-accent rounded-[30%_70%_70%_30%/30%_30%_70%_70%] animate-[spin_8s_linear_infinite] opacity-20 blur-xl" />
               <div className="absolute inset-4 bg-gradient-to-bl from-card to-background border border-border shadow-2xl rounded-full flex items-center justify-center overflow-hidden">
-                <span className="text-[120px] font-bold text-primary opacity-20 select-none">
-                  CT
-                </span>
+                <img
+                  src="/sand.png"
+                  alt="Profile"
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 border-[8px] border-background rounded-full" />
               </div>
-              
+
               {/* Decorative elements */}
               <div className="absolute top-10 right-10 w-12 h-12 bg-background border border-border rounded-2xl shadow-lg flex items-center justify-center animate-bounce" style={{ animationDuration: '3s' }}>
                 <span className="text-xl">💻</span>
@@ -76,7 +78,7 @@ export function Hero() {
               </div>
             </div>
           </motion.div>
-          
+
         </div>
       </div>
     </section>
